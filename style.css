@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Nova+Square&family=Open+Sans:wght@300&family=Roboto:wght@900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  scroll-behavior: smooth;
+  font-size: 1.6rem;
+}
+section {
+  scroll-margin: 50px;
+}
+nav {
+  background-color: #270082;
+  position: sticky;
+  top: 0;
+  height: 80px;
+  box-shadow: -3px 5px 9px rgb(41, 40, 40);
+  padding: 20px 20px;
+  z-index: 50;
+}
+.nav_content {
+  color: white;
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 10px;
+  justify-content: space-between;
+}
+.nav_content h2 {
+  font-size: 35px;
+  font-family: "Roboto", sans-serif;
+}
+.nav_content ul {
+  display: flex;
+  gap: 20px;
+  height: 30px;
+  padding-top: 10px;
+  align-content: center;
+  transition-duration: 0.5s;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.nav_content ul li:hover {
+  box-shadow: 0px 3px 0px 0px rgb(248, 244, 244);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+/*hero section*/
+.hero {
+  background-image: url(hero_image.png);
+  position: relative;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.text {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1.5rem;
+}
+.hero h1 {
+  font-size: 8rem;
+  font-family: "Roboto", sans-serif;
+}
+.hero h2 {
+  font-size: 3rem;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
+}
+/*middle_section*/
+.middle_section {
+  background-color: #281154;
+}
+.middle_section .container {
+  max-width: 110rem;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-top: 2rem;
+}
+.middle_section .music {
+  display: flex;
+  font-size: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+.middle_section p {
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.middle_section .button {
+  max-width: 20rem;
+  background-color: red;
+  padding: 4px;
+  margin: 0 auto;
+  transition-duration: 0.5s;
+}
+.middle_section .button:hover {
+  background-color: rgb(208, 10, 10);
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.middle_section .img {
+  /* margin-top: -40rem; */
+  position: relative;
+  /* top: 40rem; */
+}
+/*collection*/
+.collection {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+.collection .content {
+  margin-top: 45rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+  text-align: center;
+}
+.collection h3 {
+  font-weight: bold;
+}
+.collection .button {
+  max-width: 20rem;
+  background-color: #37008e;
+  color: white;
+  padding: 6px;
+  margin: 0 auto;
+  transition-duration: 0.5s;
+}
+.collection .button:hover {
+  background-color: #5023a4;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.collection p {
+  font-weight: 590;
+}
+/*vedio section*/
+.vedio_sectn {
+  background-image: url(video.png);
+  position: relative;
+  background-position: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+}
+.vedio_sectn .text {
+  color: white;
+  padding: 0 1.5rem;
+}
+.vedio_sectn h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+/*gift_cards*/
+.gift_cards {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 50px;
+}
+.gift_cards h3 {
+  font-weight: bold;
+  font-size: 25px;
+}
+.gift_cards .gift_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.gift_info .button {
+  max-width: 80px;
+  background-color: #37008e;
+  color: white;
+  padding: 6px;
+  transition-duration: 0.5s;
+}
+.gift_info .button:hover {
+  background-color: #5023a4;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.gift_info .segment {
+  box-shadow: -1px 4px 1px lightgray;
+}
+/*page info*/
+footer .container{
+  background-color: #1b0058;
+  display: flex;
+  justify-content: space-around;
+}
+footer .page_info {
+  color: white;
+  display: flex;
+  gap: 60px;
+  padding: 20px;
+}
+footer .page_info li {
+  list-style: none;
+  padding-bottom: 8px;
+}
+footer .page_info h3 {
+  box-shadow: 0px 1px 0px 0px rgb(248, 244, 244);
+  margin-bottom: 13px;
+}
+footer .copyright {
+  background-color: #270082;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+@media (max-width: 1024px){
+    .middle_section .img img{
+      max-width: 100%;
+    }
+    .collection .img img{
+      max-width: 100%;
+    }
+
+}
+
+@media (max-width: 768px) {
+  .nav_content ul {
+    display: none;
+  }
+
+  .menu_bar i {
+    font-size: 24px;
+  }
+  footer .page_info {
+     flex-wrap: wrap;
+  }
+  html {
+    font-size: 40%;
+  }
+  .gift_cards .img img{
+    max-width: 100%;
+  }
+  .gift_cards {
+    flex-wrap: wrap;
+    padding: 0 14px;
+  }
+
+}
+@media (min-width: 768px) {
+  .menu_bar i {
+    display: none;
+  }
+}
